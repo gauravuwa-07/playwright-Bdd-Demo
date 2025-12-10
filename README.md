@@ -27,4 +27,19 @@ npm install
 npx playwright install
 
 ## 
+=======
+**bash**
+- git clone https://github.com/gauravuwa-07/playwright-Bdd-Demo.git
+- cd playwright-Bdd-Demo
+- npm install
+- npx playwright install
+- npm install @playwright/test --save-dev
+
+## Execute the test 
+- npm run --headed
+- npx cucumber-js
+
+## Generate Reports
+- npm run report
+
 
