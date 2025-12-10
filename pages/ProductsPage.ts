@@ -16,6 +16,7 @@ export class ProductsPage extends BasePage {
   async openCart() {
     await this.click('.shopping_cart_link');
   }
+  
   async getItemNames() {
     return await this.page.locator('.inventory_item_name').allTextContents();
   }
@@ -23,6 +24,9 @@ export class ProductsPage extends BasePage {
   async getItemPrices() {
     const prices = await this.page.locator('.inventory_item_price').allTextContents();
     return prices.map(p => parseFloat(p.replace('$', '')));
+  }
+  async getItemCount() {
+    return await this.page.locator('.cart_item').count();
   }
 
   async sortBy(option: string) {

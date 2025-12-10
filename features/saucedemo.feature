@@ -15,7 +15,9 @@ Feature: Sauce Demo End-to-End Scenarios
   Scenario: Add multiple items and checkout
     When I login with username "standard_user" and password "secret_sauce"
     And I add items "Sauce Labs Backpack,Sauce Labs Bike Light" to cart
-    And I go to cart and checkout with user details "Gaurav","Singh","4000"
+    And I go to cart
+    Then I should see 2 items in cart
+    And I checkout with user details "Gaurav","Singh","4000"
     Then I should see the order complete page
 
   Scenario: Sort items by price

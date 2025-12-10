@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1152403599
+              "duration": 1470192800
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1660462099
+              "duration": 1640802799
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14909100
+              "duration": 19192600
             }
           }
         ],
@@ -69,7 +69,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 553444800
+              "duration": 541822299
             }
           },
           {
@@ -82,7 +82,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1622809700
+              "duration": 1624528900
             }
           },
           {
@@ -95,7 +95,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9667599
+              "duration": 8790600
             }
           }
         ],
@@ -119,7 +119,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 540573899
+              "duration": 561710799
             }
           },
           {
@@ -132,7 +132,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1608611299
+              "duration": 1636394699
             }
           },
           {
@@ -145,33 +145,59 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1088217700
+              "duration": 1104094200
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "I go to cart and checkout with user details \"Gaurav\",\"Singh\",\"4000\"",
+            "name": "I go to cart",
             "match": {
-              "location": "step-definitions\\e2e.steps.ts:55"
+              "location": "step-definitions\\e2e.steps.ts:54"
             },
             "result": {
               "status": "passed",
-              "duration": 3785818199
+              "duration": 546498800
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 19,
-            "name": "I should see the order complete page",
+            "name": "I should see 2 items in cart",
             "match": {
-              "location": "step-definitions\\e2e.steps.ts:65"
+              "location": "step-definitions\\e2e.steps.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 6440400
+              "duration": 8299400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I checkout with user details \"Gaurav\",\"Singh\",\"4000\"",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3231380800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see the order complete page",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11417300
             }
           }
         ],
@@ -182,7 +208,7 @@
         "description": "",
         "id": "sauce-demo-end-to-end-scenarios;sort-items-by-price",
         "keyword": "Scenario",
-        "line": 21,
+        "line": 23,
         "name": "Sort items by price",
         "steps": [
           {
@@ -195,46 +221,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 543037799
+              "duration": 546207099
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 22,
+            "line": 24,
             "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
             "match": {
               "location": "step-definitions\\e2e.steps.ts:37"
             },
             "result": {
               "status": "passed",
-              "duration": 1632825699
+              "duration": 1643628100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
+            "line": 25,
             "name": "I sort items by \"Price (low to high)\"",
             "match": {
-              "location": "step-definitions\\e2e.steps.ts:69"
+              "location": "step-definitions\\e2e.steps.ts:77"
             },
             "result": {
               "status": "passed",
-              "duration": 527493000
+              "duration": 526164700
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 26,
             "name": "items should be sorted by price ascending",
             "match": {
-              "location": "step-definitions\\e2e.steps.ts:73"
+              "location": "step-definitions\\e2e.steps.ts:81"
             },
             "result": {
               "status": "passed",
-              "duration": 18958700
+              "duration": 16774199
             }
           }
         ],
@@ -245,7 +271,7 @@
         "description": "",
         "id": "sauce-demo-end-to-end-scenarios;sort-items-by-name",
         "keyword": "Scenario",
-        "line": 26,
+        "line": 28,
         "name": "Sort items by name",
         "steps": [
           {
@@ -258,46 +284,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 534261600
+              "duration": 528012100
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 27,
+            "line": 29,
             "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
             "match": {
               "location": "step-definitions\\e2e.steps.ts:37"
             },
             "result": {
               "status": "passed",
-              "duration": 1599578699
+              "duration": 1626412599
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
+            "line": 30,
             "name": "I sort items by \"Name (A to Z)\"",
-            "match": {
-              "location": "step-definitions\\e2e.steps.ts:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 525121299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "items should be sorted by name ascending",
             "match": {
               "location": "step-definitions\\e2e.steps.ts:77"
             },
             "result": {
               "status": "passed",
-              "duration": 303667199
+              "duration": 524288600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "items should be sorted by name ascending",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 317221200
             }
           }
         ],

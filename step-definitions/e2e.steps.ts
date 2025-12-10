@@ -51,11 +51,19 @@ When('I add items {string} to cart', async (csv) => {
   ;
   for (const item of items) await productsPage.addItem(item);
 });
+When('I go to cart', async () => {
+  await productsPage.openCart();
+  productsPage = new ProductsPage(page);
+});
+Then('I should see {int} items in cart', async (count: number) => {
+  const itemCount = await productsPage.getItemCount();
+  if (itemCount !== count) throw new Error(`Expected: ${count}, Got: ${itemCount}`);
+});
 
 When(
-  'I go to cart and checkout with user details {string},{string},{string}',
+  'I checkout with user details {string},{string},{string}',
   async (f, l, p) => {
-    await productsPage.openCart();
+    //await productsPage.openCart();
     await cartPage.checkout();
     await checkoutPage.enterInfo(f, l, p);
     await checkoutPage.finishOrder();
