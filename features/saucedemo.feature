@@ -22,3 +22,8 @@ Feature: Sauce Demo End-to-End Scenarios
     When I login with username "standard_user" and password "secret_sauce"
     And I sort items by "Price (low to high)"
     Then items should be sorted by price ascending
+
+  Scenario: Sort items by name
+    When I login with username "standard_user" and password "secret_sauce"
+    And I sort items by "Name (A to Z)"
+    Then items should be sorted by name ascending

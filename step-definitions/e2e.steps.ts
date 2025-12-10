@@ -73,3 +73,10 @@ When('I sort items by {string}', async (opt) => {
 Then('items should be sorted by price ascending', async () => {
   await productsPage.assertPriceSortedAsc();
 });
+
+Then('items should be sorted by name ascending', async () => {
+  const names = await productsPage.getItemNames();
+  const sorted = [...names].sort();
+  if (JSON.stringify(names) !== JSON.stringify(sorted)) throw new Error('Not sorted by name');
+  await browser.close();
+});
