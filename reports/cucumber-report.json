@@ -1,0 +1,252 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sauce-demo-end-to-end-scenarios;valid-login",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Valid login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the Sauce Demo login page",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1406550799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1641389499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see the products page",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15447699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sauce-demo-end-to-end-scenarios;invalid-login",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Invalid login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the Sauce Demo login page",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 546660800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I login with username \"wrong_user\" and password \"bad_pass\"",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1625518199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see a login error message",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9857400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sauce-demo-end-to-end-scenarios;add-multiple-items-and-checkout",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Add multiple items and checkout",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the Sauce Demo login page",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 545431699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1632676299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I add items \"Sauce Labs Backpack,Sauce Labs Bike Light\" to cart",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1071749399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I go to cart and checkout with user details \"Gaurav\",\"Singh\",\"4000\"",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3772212099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should see the order complete page",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6828900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sauce-demo-end-to-end-scenarios;sort-items-by-price",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Sort items by price",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the Sauce Demo login page",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 541605500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1615882100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I sort items by \"Price (low to high)\"",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 526942999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "items should be sorted by price ascending",
+            "match": {
+              "location": "step-definitions\\e2e.steps.ts:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25471400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sauce-demo-end-to-end-scenarios",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Sauce Demo End-to-End Scenarios",
+    "tags": [],
+    "uri": "features\\saucedemo.feature"
+  }
+]
